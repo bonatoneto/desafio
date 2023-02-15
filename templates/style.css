@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #020E26;
+    --color2: #041840;
+    --color3: #4D688C;
+    --color4: #1BF28E;
+    --color5: #18d97fe7;
+}
+
+body {
+    background-color: var(--color1);
+    color: var(--color4);
+    font-family: 'Inter';
+}
+
+.container {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color2);
+    border-radius: 16px;
+    padding: 12px;
+}
+
+.nome {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    transition: ease-out 0.5s;
+    gap: 4px;
+    border: 1px solid #1BF28E;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.inputBox input {
+    height: 46px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: var(--color3);
+    transition: ease-out 0.5s;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 12px;
+}
+
+.inputBox label {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+    transition: ease-out 0.5s;
+}
+
+.submit button {
+    width: 150px;
+    height: 46px;
+    margin-top: 12px;
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color4);
+    color: white;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+    color: var(--color2);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.submit button:hover {
+    background-color: var(--color5);
+    transition: ease-in-out 0.2s;
+    width: 155px;
+    height: 51px;
+}
