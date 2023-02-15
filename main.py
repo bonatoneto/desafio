@@ -6,9 +6,10 @@ app = Flask(__name__)
 def hello():
     return render_template("index.html")
 
-@app.route('/resultado')
+@app.route("/resultado", methods=["POST"])
 def resultado():
-    return "resultado"
+    mensagem = "esse é o resultado"
+    return mensagem
 
 if __name__ == "__main__":
     app.run(debug=True)
