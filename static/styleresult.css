@@ -29,12 +29,13 @@ body {
     background-color: var(--color2);
     border-radius: 16px;
     padding: 12px;
+    text-align: center;
 }
 
 button {
-    width: 100px;
-    height: 46px;
-    margin-top: 10px;
+    width: 68px;
+    height: 36px;
+    margin-top: 16px;
     padding: 6px;
     border: none;
     border-radius: 6px;
@@ -45,4 +46,10 @@ button {
     color: var(--color2);
     font-weight: 600;
     font-size: 18px;
+}
+
+button:hover {
+    background-color: var(--color5);
+    transition: ease-in-out 0.2s;
+
 }

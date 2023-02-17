@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bora de Desafio</title>
         <link rel="stylesheet" href="{{ url_for ('static', filename= 'style.css') }}">
+        <script
+        src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body>
         <div class="container">
@@ -21,7 +26,7 @@
                     </div>
                     <div class="inputBox">
                         <label for="tel">Telefone</label>
-                        <input type="number" name="tel" id="tel" class="inputUser">
+                        <input type="tel" name="tel" id="tel" class="inputUser"maxlength="15">
                     </div>
                     <div class="inputBox">
                         <label for="email">E-mail</label>
@@ -29,12 +34,17 @@
                     </div>
                     <div class="inputBox">
                         <label for="numero">Numero</label>
-                        <input type="number" name="numero" id="numero" class="inputUser">
+                        <input type="number" name="numero" id="numero" class="inputUser" min="0" max="999">
                     </div>
                     <div class="submit">
                         <button>Enviar</button>
                     </div>
             </form>
         </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#tel").mask("(00) 00000-0000")
+            })
+        </script>
     </body>
 </html>
