@@ -5,7 +5,7 @@ import re
 app = Flask(__name__)
 
 #Define a rota onde vai iniciar a aplicação
-@app.route('/inicio')
+@app.route('/')
 def hello():
     return render_template('index.html')
 
