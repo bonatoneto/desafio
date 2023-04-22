@@ -1,11 +1,10 @@
 <strong><h1 align="center">Desafio</h1></strong>
-desafio para uma vaga de estágio
+Bora de desafio?
 
 # Link para o projeto:
 https://boradedesafio.onrender.com
 
 <h2> Como deve funcionar: </h2>
-    Bora de DESAFIO?
 
 1) Página HTML com Validação CSS
 
@@ -33,10 +32,10 @@ Botão Enviar
 
 # Exemplo:
 <p align="center">
-  <img alt="" src="github/preview-1" width="100%">
+  <img alt="" src="github/preview-1.png" width="100%">
 </p>
 <p align="center">
-  <img alt="" src="github/preview-2" width="100%">
+  <img alt="" src="github/preview-2.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
